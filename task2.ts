@@ -1,6 +1,6 @@
 // a species restricted to exactly dog, cat, rabbit
 
-interface ShelterAnimal {
+export interface ShelterAnimal {
     name: string;
     species: "dog" | "cat" | "rabbit" | "guinea pig";
     ageYears: number;

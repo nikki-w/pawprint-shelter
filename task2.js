@@ -1,4 +1,6 @@
+"use strict";
 // a species restricted to exactly dog, cat, rabbit
+Object.defineProperty(exports, "__esModule", { value: true });
 var firstAnimal = {
     name: "Beans",
     species: "cat",
@@ -12,7 +14,7 @@ var secondAnimal = {
     weightKg: 1.2
 };
 // Find at least three different ways to make a ShelterAnimal 
-// typed object literal fail to compile 
+// typed object literal fail to compile :
 // const firstFailingAnimal: ShelterAnimal = {
 //     name: "Ralph",
 //     species: "guinea pig",
@@ -30,9 +32,11 @@ var secondAnimal = {
 // }
 // Output: Object literal may only specify known properties, 
 // and 'favouriteFood' does not exist in type 'ShelterAnimal'.
-var thirdFailingAnimal = {
-    name: "Ralph",
-    species: "hamster",
-    ageYears: 1,
-    weightKg: 1.2
-};
+// const thirdFailingAnimal: ShelterAnimal = {
+//     name: "Ralph",
+//     species: "hamster",
+//     ageYears: 1,
+//     weightKg: 1.2
+// }
+// Output: Type '"hamster"' is not assignable to type 
+// '"dog" | "cat" | "rabbit" | "guinea pig"'.
